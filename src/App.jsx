@@ -34,7 +34,6 @@ export default function App() {
   const handleAnswer = (id, title, idAnswer) => {
     questions.forEach((item) => {
       if (item.id === id) {
-        hrdftr;
         if (item.correctAns === title) {
           setCorrect(correct + 1);
           setCount((old) => old + 1);
@@ -73,7 +72,7 @@ export default function App() {
     <main>
       {started ? (
         <div>
-          {renderQuestion} <button onClick={checkAns}>Check answer</button>
+          {renderQuestion} <button>Check answer</button>
         </div>
       ) : (
         <Menu start={start} />
