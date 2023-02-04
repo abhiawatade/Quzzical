@@ -1,9 +1,13 @@
+import "./Menu.css";
+
 export default function Menu(props) {
   return (
-    <div>
+    <div className="intro-page">
       <h1>Quizzical</h1>
-      <p>GAME ON</p>
-      <button onClick={() => props.start()}>Start Game</button>
+      <p className="intro-description">Solve Random Quizes</p>
+      <button className="btn" onClick={() => props.start()}>
+        Start Game
+      </button>
     </div>
   );
 }
